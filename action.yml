@@ -1,7 +1,7 @@
 name: action-tower-launch
 author: Phil Ewels
 
-description: Launch a workflow using Nextflow Tower (https://tower.nf)
+description: Launch a workflow using Nextflow Tower (https://cloud.seqera.io/)
 
 branding:
   icon: "play"
@@ -20,7 +20,7 @@ inputs:
   api_endpoint:
     description: Tower API URL
     required: false
-    default: https://api.tower.nf
+    default: https://api.cloud.seqera.io
   pipeline:
     description: Pipeline repository
     default: https://github.com/${{ github.repository }}

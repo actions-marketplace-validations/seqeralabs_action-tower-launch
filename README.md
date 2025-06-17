@@ -119,7 +119,7 @@ Default: Your primary compute environment.
 
 **[Optional]** Nextflow Tower API URL endpoint.
 
-Default: `api.tower.nf`
+Default: `api.cloud.seqera.io`
 
 ### `pipeline`
 
