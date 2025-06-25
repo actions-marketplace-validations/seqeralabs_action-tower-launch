@@ -11,7 +11,7 @@ LOG_FN=tower_action_$(date +'%Y_%m_%d-%H_%M').log
 LOG_JSON="tower_action_"$(uuidgen)".json"
 
 # Manual curl of service-info
-curl https://api.tower.nf/service-info >> $LOG_FN
+curl https://api.cloud.seqera.io/service-info >> $LOG_FN
 echo -e "\n\n------\n\n" >> $LOG_FN
 
 # Print the params input to a file

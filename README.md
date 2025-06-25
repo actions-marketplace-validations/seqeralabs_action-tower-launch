@@ -119,7 +119,7 @@ Default: Your primary compute environment.
 
 **[Optional]** Nextflow Tower API URL endpoint.
 
-Default: `api.tower.nf`
+Default: `api.cloud.seqera.io`
 
 ### `pipeline`
 
@@ -307,7 +307,7 @@ The action prints normal stdout info-level log messages to the actions console. 
 The output log file is saved as `tower_action_$(timestamp).log` and can be captured using `actions/upload-artifact using the following settings:
 
 ```yaml
-- uses: actions/upload-artifact@v3
+- uses: actions/upload-artifact@v4
   with:
     name: Tower debug log file
     path: tower_action_*.log
@@ -316,7 +316,7 @@ The output log file is saved as `tower_action_$(timestamp).log` and can be captu
 The action writes a JSON file which has the same format as the `outputs.json` used above. This is wrtten to a file called `tower_action_$(uuidgen).json`. It can be captured in a similar manner:
 
 ```yaml
-- uses: actions/upload-artifact@v3
+- uses: actions/upload-artifact@v4
   with:
     name: Tower output JSON file
     path: tower_action_*.json
